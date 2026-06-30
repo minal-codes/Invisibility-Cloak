@@ -43,6 +43,10 @@ kernel = np.ones((3, 3), np.uint8)
 # Create output folder if it doesn't exist
 os.makedirs("output", exist_ok=True)
 
+# Video Recording Variables
+recording = False
+video_writer = None
+
 while True:
 
     ret, frame = camera.read()
@@ -88,13 +92,27 @@ while True:
     # Instructions
     cv2.putText(
         final_output,
-        "B = New Background | S = Screenshot | ESC = Exit",
+        "B = New Background | S = Screenshot | R = Record | ESC = Exit"
         (10, 30),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.6,
         (0, 255, 0),
         2
     )
+
+    if recording:
+        cv2.putText(
+            final_output,
+            "REC",
+            (560, 30),
+             cv2.FONT_HERSHEY_SIMPLEX,
+             0.8,
+             (0, 0, 255),
+             2
+        )
+
+    if recording:
+        video_writer.write(final_output)
 
     # Show Output
     cv2.imshow("Invisibility Cloak", final_output)
@@ -127,6 +145,39 @@ while True:
 
         cv2.imwrite(filename, final_output)
         print(f"Screenshot Saved: {filename}")
+
+    elif key == ord('r'):
+        
+        if not recording:
+
+         filename = os.path.join(
+            "output",
+            f"recording_{int(time.time())}.mp4"
+        )
+
+        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+
+        video_writer = cv2.VideoWriter(
+            filename,
+            fourcc,
+            20,
+            (640, 480)
+        )
+
+        recording = True
+        print("Recording Started")
+
+    else:
+
+        recording = False
+
+        if video_writer is not None:
+            video_writer.release()
+
+        print("Recording Saved")
+
+if video_writer is not None:
+    video_writer.release()
 
 camera.release()
 cv2.destroyAllWindows()
