@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 import subprocess, sys, importlib.util
 
 REQUIRED = {
@@ -44,3 +55,58 @@ from engine import (
     PortalBox,
     HUD
 )
+
+while True:
+
+    ret, frame = cap.read()
+
+    if not ret:
+        time.sleep(0.02)
+        continue
+
+    # Update FPS
+    hud.tick()
+
+    # -------------------------------
+    # Segmentation
+    # -------------------------------
+    seg_mask = seg.get_mask(frame)
+
+    # -------------------------------
+    # Hand Tracking
+    # -------------------------------
+    results = tracker.process(frame)
+
+    info = tracker.get_info(results, w, h)
+
+    # -------------------------------
+    # Portal Update
+    # -------------------------------
+    portal.update(info)
+    portal.update_alpha()
+
+    # -------------------------------
+    # Render Invisibility
+    # -------------------------------
+    out = portal.render(
+        frame,
+        seg_mask,
+        bg_model.get(),
+        info["all_points"]
+    )
+
+    # -------------------------------
+    # Draw HUD
+    # -------------------------------
+    out = hud.draw(
+        out,
+        portal,
+        info
+    )
+
+    cv2.imshow(WINDOW, out)
+
+    key = cv2.waitKey(1) & 0xFF
+
+    if key in (ord("q"), 27):
+        break
