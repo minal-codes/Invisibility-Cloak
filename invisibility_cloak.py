@@ -30,3 +30,9 @@ Ghost / Invisibility Mode
 """
 
 WINDOW = "Ghost / Invisibility Mode"
+
+def _detect_device():
+
+    def run_calibration():
+
+        cap = cv2.VideoCapture(...)
