@@ -25,15 +25,15 @@ The project combines **background modeling**, **human segmentation**, **hand tra
 
 # 🎯 Features
 
-- 🎥 Real-time webcam processing
-- 👻 Live invisibility effect
-- 🖐️ Hand gesture based activation
-- 📦 Dynamic portal generation
-- 🎯 Automatic background calibration
-- 📸 Screenshot capture
-- 🔄 Background recalibration
-- ⚡ Optimized real-time performance
-- 💻 Cross-platform support
+-  Real-time webcam processing
+-  Live invisibility effect
+-  Hand gesture based activation
+-  Dynamic portal generation
+-  Automatic background calibration
+-  Screenshot capture
+-  Background recalibration
+-  Optimized real-time performance
+-  Cross-platform support
 
 ---
 
