@@ -158,7 +158,6 @@ Invisibility-Computer-Vision
 ├── main.py
 ├── requirements.txt
 ├── README.md
-└── screenshots/
 ```
 
 ---
