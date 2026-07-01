@@ -132,7 +132,7 @@ python main.py 1
 
 ---
 
-# ✋ Gesture Guide
+#  Gesture Guide
 
 ### Step 1
 
@@ -156,7 +156,7 @@ Repeat the pinch gesture to become visible again.
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 Invisibility-Computer-Vision
@@ -169,7 +169,7 @@ Invisibility-Computer-Vision
 
 ---
 
-# 📸 Demo
+#  Demo
 
 > Add your screenshots or GIF here.
 
@@ -179,7 +179,7 @@ screenshots/demo.gif
 
 ---
 
-# 🔮 Future Improvements
+#  Future Improvements
 
 - Multiple invisibility modes
 - AI-based gesture customization
@@ -190,7 +190,7 @@ screenshots/demo.gif
 
 ---
 
-# 👨‍💻 Developer
+# Developer
 
 **Minal Sharma**
 
@@ -200,4 +200,4 @@ Passionate about building practical Computer Vision and AI applications.
 
 ---
 
-## ⭐ If you found this project helpful, consider giving it a star!
+## If you found this project helpful, consider giving it a star!
