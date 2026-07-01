@@ -1,4 +1,4 @@
-# 👻 Ghost / Invisibility Mode
+<h1 align="center"> Invisibility Cloak</h1>
 
 > A real-time Computer Vision application that creates an invisibility effect using **OpenCV**, **MediaPipe**, and **Python** by replacing the segmented foreground with a dynamically captured background.
 
