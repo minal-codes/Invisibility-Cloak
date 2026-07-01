@@ -1,13 +1,20 @@
 <h1 align="center"> Invisibility Cloak</h1>
 
-> A real-time Computer Vision application that creates an invisibility effect using **OpenCV**, **MediaPipe**, and **Python** by replacing the segmented foreground with a dynamically captured background.
+<h3 align="center">
+Real-Time Computer Vision System
+</h3>
+
+<p align="center">
+A real-time Computer Vision application that creates an invisibility effect using
+<strong>OpenCV</strong>, <strong>MediaPipe</strong>, and <strong>Python</strong> by replacing the segmented foreground with a dynamically captured background.
+</p>
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Tracking-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+<img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+<img src="https://img.shields.io/badge/MediaPipe-Hand%20Tracking-FF6F00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Completed-32CD32?style=for-the-badge"/>
 
 </p>
 
