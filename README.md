@@ -103,13 +103,13 @@ pip install opencv-python numpy mediapipe
 Default webcam
 
 ```bash
-python invisibility_cloak.py
+python main.py
 ```
 
 Specify a camera
 
 ```bash
-python invisibility_cloak.py 1
+python main.py 1
 ```
 
 ---
@@ -155,7 +155,7 @@ Repeat the pinch gesture to become visible again.
 Invisibility-Computer-Vision
 │
 ├── engine.py
-├── invisibility_cloak.py
+├── main.py
 ├── requirements.txt
 ├── README.md
 └── screenshots/
