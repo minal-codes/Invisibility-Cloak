@@ -15,12 +15,6 @@ _auto_install()
 import cv2, numpy as np, time
 
 def _detect_device():
-    try:
-        import torch
-        if torch.cuda.is_available():
-            return "GPU/"+torch.cuda.get_device_name(0).split()[0]
-    except ImportError:
-        pass
     return "CPU"
 
 from engine import BackgroundModel, SegmentationEngine, HandTracker, PortalBox, HUD
