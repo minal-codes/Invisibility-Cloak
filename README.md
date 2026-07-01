@@ -20,7 +20,7 @@ A real-time Computer Vision application that creates an invisibility effect usin
 
 ---
 
-## ✨ Overview
+##  Overview
 
 Ghost / Invisibility Mode is an interactive real-time computer vision project that recreates the famous **invisibility cloak illusion**.
 
@@ -30,7 +30,7 @@ The project combines **background modeling**, **human segmentation**, **hand tra
 
 ---
 
-# 🎯 Features
+#  Features
 
 -  Real-time webcam processing
 -  Live invisibility effect
@@ -55,7 +55,7 @@ The project combines **background modeling**, **human segmentation**, **hand tra
 
 ---
 
-# ⚙️ How It Works
+# Working
 
 The application follows the following pipeline:
 
@@ -83,7 +83,7 @@ Real-Time Invisibility Effect
 
 ---
 
-# 🚀 Installation
+# Installation
 
 Clone the repository
 
@@ -105,7 +105,7 @@ pip install opencv-python numpy mediapipe
 
 ---
 
-# ▶️ Running the Project
+# Running the Project
 
 Default webcam
 
@@ -121,7 +121,7 @@ python main.py 1
 
 ---
 
-# 🎮 Controls
+# Controls
 
 | Key | Function |
 |------|----------|
